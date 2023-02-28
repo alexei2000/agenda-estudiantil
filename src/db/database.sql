@@ -1,5 +1,6 @@
 CREATE DATABASE agenda_db;
-USE agenda_db CREATE TABLE `assessments` (
+USE agenda_db;
+CREATE TABLE `assessments` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `enrollId` bigint(20) NOT NULL,
   `status` enum('PENDING', 'SEND', 'NOT_SEND', 'REVIEWED') NOT NULL,

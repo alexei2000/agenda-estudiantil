@@ -1,7 +1,7 @@
 import express from "express";
-import { getAssigmentsSummary } from "./controllers/assigmentsSummaryController";
-import { getStudentProgress } from "./controllers/studentProgressController";
-import { getSubjectDetail } from "./controllers/subjectDetailController";
+import { getAssigmentsSummary } from "./controllers/assigmentsSummaryController.js";
+import { getStudentProgress } from "./controllers/studentProgressController.js";
+import { getSubjectDetail } from "./controllers/subjectDetailController.js";
 
 const router = express.Router();
 

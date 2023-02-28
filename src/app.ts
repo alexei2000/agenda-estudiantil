@@ -1,6 +1,6 @@
-import router from "./routes";
-import app from "./config";
-import db from "./db/connection";
+import router from "./routes.js";
+import app from "./config.js";
+import db from "./db/connection.js";
 
 const dbConnect = async () => {
   try {

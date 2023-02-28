@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import db from "../db/connection";
+import db from "../db/connection.js";
 
 const Subject = db.define(
   "subjects",

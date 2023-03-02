@@ -16,7 +16,15 @@ export const getStudentProgress = async (_: Request, res: Response) => {
       ],
     },
   });
-  subjects;
 
-  res.json(subjects);
+  const totalUc = subjects
+    .map(({ uc }: any) => uc)
+    .reduce((a: any, b: any) => a + b, 0);
+
+  const ucCumpleted = subjects
+    .filter(({ classes }: any) => classes?.[0]?.enrolls?.[0].grade >= 6)
+    .map(({ uc }: any) => uc)
+    .reduce((a: any, b: any) => a + b, 0);
+
+  res.json({ progress: (ucCumpleted / totalUc) * 100 });
 };

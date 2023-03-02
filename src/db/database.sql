@@ -110,7 +110,7 @@ VALUES (
   (NULL, '4', 'ESTRUCTURA DE DATOS', '4');
 INSERT INTO `periods` (`id`, `name`)
 VALUES (NULL, '2022 - 01'),
-(NULL, '2022 - 02');
+  (NULL, '2022 - 02');
 INSERT INTO `faculties` (`id`, `name`)
 VALUES (NULL, 'Atlántico');
 INSERT INTO `classes` (
@@ -147,7 +147,7 @@ VALUES (NULL, '1', '1', '9'),
   (NULL, '11', '1', NULL),
   (NULL, '12', '1', NULL),
   (NULL, '13', '1', NULL),
-  (NULL, '14', '1', NULL)
+  (NULL, '14', '1', NULL);
 INSERT INTO `assigments` (
     `id`,
     `classId`,

@@ -18,5 +18,6 @@ export const getStudentProgress = async (_: Request, res: Response) => {
   });
   subjects;
 
-  res.json(subjects);
+  // res.json(subjects);
+  res.render('studentProgress',{subjects})
 };

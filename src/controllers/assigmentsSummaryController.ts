@@ -9,5 +9,8 @@ export const getAssigmentsSummary = async (_: Request, res: Response) => {
     where: { commitmentDate: { [Op.gt]: new Date().toString() } },
     include: { model: Class, include: [Subject] },
   });
-  res.json(assigments);
+  // res.json(assigments);
+
+  res.render('assigmentsSummary', {assigments});
+
 };

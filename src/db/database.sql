@@ -147,7 +147,7 @@ VALUES (NULL, '1', '1', '9'),
   (NULL, '11', '1', NULL),
   (NULL, '12', '1', NULL),
   (NULL, '13', '1', NULL),
-  (NULL, '14', '1', NULL)
+  (NULL, '14', '1', NULL);
 INSERT INTO `assigments` (
     `id`,
     `classId`,

@@ -1,13 +1,12 @@
 <%- include('partials/head'); %>
 
-<% const evaluations = ['Evaluacion 1', 'Evaluacion 2', 'Evaluacion 3'] %>
 
-<% evaluations.forEach( (evaluation) => { %>
+<% assigments.forEach( (assigment) => { %>
   <div class="card" style="width: 18rem;">
     <div class="card-body">
-      <h4 class="card-title">evaluation</h4>
-      <h6 class="card-subtitle my-2 text-muted">Materia 1</h6>
-      <p class="card-text"><small class="text-muted"><b>Fecha:</b> 10/02/2023</small></p>
+      <h4 class="card-title"><%- assigment.modality %> - <%- assigment.name %></h4>
+      <h6 class="card-subtitle my-2 text-muted"><%- assigment.class.subject.name %></h6>
+      <p class="card-text"><small class="text-muted"><b>Fecha:</b> <%- assigment.commitmentDate %></small></p>
     </div>
   </div>
 <% }); %>

@@ -26,5 +26,5 @@ export const getStudentProgress = async (_: Request, res: Response) => {
   .map(({ uc }: any) => uc)
   .reduce((a: any, b: any) => a + b, 0);
 
-  res.render('studentProgress',{subjects, progress: (ucCumpleted / totalUc) * 100})
+  res.render('studentProgress',{subjects, progress: ((ucCumpleted / totalUc) * 100).toFixed(2) })
 };

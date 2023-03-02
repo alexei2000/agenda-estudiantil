@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>assigmentsSummary</title>
-  </head>
-  <body>
-    assigmentsSummary
-  </body>
-</html>
+<%- include('partials/head'); %>
+
+<% const evaluations = ['Evaluacion 1', 'Evaluacion 2', 'Evaluacion 3'] %>
+
+<% evaluations.forEach( (evaluation) => { %>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h4 class="card-title">evaluation</h4>
+      <h6 class="card-subtitle my-2 text-muted">Materia 1</h6>
+      <p class="card-text"><small class="text-muted"><b>Fecha:</b> 10/02/2023</small></p>
+    </div>
+  </div>
+<% }); %>
+
+
+
+
+<%- include('partials/footer'); %>

@@ -1,12 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>subjectDetail</title>
-  </head>
-  <body>
-    subjectDetail
-  </body>
-</html>
+<%- include('partials/head'); %>
+
+
+<div class="row align-items-center">
+    <h3>Materia 1</h3>
+    <h3 class="ml-4"><strong>COD:</strong> 010201</h3>
+</div>
+
+<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#s2022-2" role="tab" aria-controls="home"
+            aria-selected="true">2022-2</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#s2022-1" role="tab" aria-controls="profile"
+            aria-selected="false">2022-1</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="s2022-2" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row p-4">
+            <div class="col p-4">
+                <p><strong>Docente:</strong> ${Docente}</p>
+                <p><strong>Sede:</strong> ${Sede}</p>
+                <p><strong>UC:</strong> ${UC}</p>
+            </div>
+            <div class="col p-4 justify-content-end text-right">
+                <p><strong>Nota Acumulada:</strong> ${Nota Acumulada}</p>
+                <p><strong>Promedio:</strong> ${Promedio}</p>
+            </div>
+        </div>
+
+        <div class="card card-plain table-plain-bg bg-secondary text-white rounded">
+            <div class="card-body table-full-width table-responsive ">
+                <table class="table table-hover">
+                    <thead>
+                        <th class="text-white"></th>
+                        <th class="text-white">Unidad</th>
+                        <th class="text-white">Descripcion</th>
+                        <th class="text-white">Fecha</th>
+                        <th class="text-white">Estado</th>
+                        <th class="text-white">Nota</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="nc-icon nc-simple-remove"></i></td>
+                            <td>Unidad 1</td>
+                            <td>8/10/2022</td>
+                            <td>Ensayo 1</td>
+                            <td>Evaluado</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><i class="nc-icon nc-simple-remove"></i></td>
+                            <td>Unidad 2</td>
+                            <td>11/11/2022</td>
+                            <td>Exposicion</td>
+                            <td>No Entregado</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="nc-icon nc-simple-remove"></i></td>
+                            <td>Unidad 3</td>
+                            <td>01/12/2022</td>
+                            <td>Ensayo</td>
+                            <td>Entregado</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><i class="nc-icon nc-simple-remove"></i></td>
+                            <td>Unidad 4</td>
+                            <td>18/01/2022</td>
+                            <td>Examen</td>
+                            <td>Pendiente</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tab-pane fade show active" id="s2022-1" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row p-4">
+            <div class="col p-4">
+                <p><strong>Docente:</strong> ${Docente k}</p>
+                <p><strong>Sede:</strong> ${Sede}</p>
+                <p><strong>UC:</strong> ${UC}</p>
+            </div>
+            <div class="col p-4 justify-content-end text-right">
+                <p><strong>Nota Acumulada:</strong> ${Nota Acumulada}</p>
+                <p><strong>Promedio:</strong> ${Promedio}</p>
+            </div>
+        </div>
+
+        <div class="card card-plain table-plain-bg bg-secondary text-white rounded">
+            <div class="card-body table-full-width table-responsive ">
+                <table class="table table-hover">
+                    <thead>
+                        <th class="text-white"></th>
+                        <th class="text-white">Unidad</th>
+                        <th class="text-white">Descripcion</th>
+                        <th class="text-white">Fecha</th>
+                        <th class="text-white">Estado</th>
+                        <th class="text-white">Nota</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="nc-icon nc-simple-remove"></i></td>
+                            <td>Unidad 1</td>
+                            <td>8/10/2022</td>
+                            <td>Ensayo 1</td>
+                            <td>Evaluado</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><i class="nc-icon nc-simple-remove"></i></td>
+                            <td>Unidad 2</td>
+                            <td>11/11/2022</td>
+                            <td>Exposicion</td>
+                            <td>No Entregado</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="nc-icon nc-simple-remove"></i></td>
+                            <td>Unidad 3</td>
+                            <td>01/12/2022</td>
+                            <td>Ensayo</td>
+                            <td>Entregado</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><i class="nc-icon nc-simple-remove"></i></td>
+                            <td>Unidad 4</td>
+                            <td>18/01/2022</td>
+                            <td>Examen</td>
+                            <td>Pendiente</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+<div class="row justify-content-end">
+    <a href="#" id="addAsigment" class="btn">
+        <span>Agregar Asignación</span>
+        <i class="nc-icon nc-simple-add"></i>
+    </a>
+</div>
+<%- include('partials/footer'); %>

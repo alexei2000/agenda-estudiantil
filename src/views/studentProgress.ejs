@@ -1,12 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>studentProgress</title>
-  </head>
-  <body>
-    studentProgress
-  </body>
-</html>
+<%- include('partials/head'); %>
+
+
+  <div class="row bg-secondary pt-3 rounded text-light">
+    <div class="col-md-6">
+      <h5><b>Promedio de notas: ${Promedio}</b></h5>
+    </div>
+    <div class="col-md-6 ">
+      <h5 class="text-right">Progreso: ${%}</h5>
+    </div>
+  </div>
+  
+  <div class="row bg-secondary text-white my-4 py-2 px-4 rounded">
+    <span>filtros</span>
+  </div>
+  
+  <div class="bg-dark p-4 rounded ">
+    <div class="card card-plain table-plain-bg bg-secondary text-white rounded">
+      <div class="card-header ">
+        <h4 class="card-title text-white">Semestre #1</h4>
+  
+      </div>
+      <div class="card-body table-full-width table-responsive ">
+        <table class="table table-hover">
+          <thead>
+            <th class="text-white">Codigo</th>
+            <th class="text-white">Materia</th>
+            <th class="text-white">UC</th>
+            <th class="text-white">Semestre</th>
+            <th class="text-white">Estado</th>
+            <th class="text-white">Nota</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>010201</td>
+              <td>Materia 1</td>
+              <td>4</td>
+              <td>2022-1</td>
+              <td>Aprobado</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>010202</td>
+              <td>Materia 2</td>
+              <td>4</td>
+              <td>2022-1</td>
+              <td>Aprobado</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>010203</td>
+              <td>Materia 3</td>
+              <td>2</td>
+              <td>2022-1</td>
+              <td>Aprobado</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>010204</td>
+              <td>Materia 4</td>
+              <td>3</td>
+              <td>2022-1</td>
+              <td>Aprobado</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <div class="card card-plain table-plain-bg bg-secondary text-white rounded">
+      <div class="card-header ">
+        <h4 class="card-title text-white">Semestre #1</h4>
+  
+      </div>
+      <div class="card-body table-full-width table-responsive ">
+        <table class="table table-hover">
+          <thead>
+            <th class="text-white">Codigo</th>
+            <th class="text-white">Materia</th>
+            <th class="text-white">UC</th>
+            <th class="text-white">Semestre</th>
+            <th class="text-white">Estado</th>
+            <th class="text-white">Nota</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>010201</td>
+              <td>Materia 1</td>
+              <td>4</td>
+              <td>2022-1</td>
+              <td>Aprobado</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>010202</td>
+              <td>Materia 2</td>
+              <td>4</td>
+              <td>2022-1</td>
+              <td>Aprobado</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>010203</td>
+              <td>Materia 3</td>
+              <td>2</td>
+              <td>2022-1</td>
+              <td>Aprobado</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>010204</td>
+              <td>Materia 4</td>
+              <td>3</td>
+              <td>2022-1</td>
+              <td>Aprobado</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+<%- include('partials/footer'); %>

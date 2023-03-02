@@ -7,6 +7,6 @@ const router = express.Router();
 
 router.get("/summary", getAssigmentsSummary);
 router.get("/progress", getStudentProgress);
-router.get("/subject", getSubjectDetail);
+router.get("/subject/:id", getSubjectDetail);
 
 export default router;

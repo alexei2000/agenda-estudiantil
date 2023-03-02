@@ -26,11 +26,9 @@ Student.hasMany(Enroll, {
   foreignKey: "studentId",
   sourceKey: "id",
 });
-Student.belongsTo(Enroll, {
+Enroll.belongsTo(Student, {
   foreignKey: "studentId",
   targetKey: "id",
 });
-
-Enroll.belongsTo(Student);
 
 export default Student;

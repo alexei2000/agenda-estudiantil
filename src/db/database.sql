@@ -11,13 +11,13 @@ CREATE TABLE `assigments` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `classId` bigint(20) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `commitmentDate` date NOT NULL,
+  `commitmentDate` datetime NOT NULL,
   `modality` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 CREATE TABLE `classes` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `subjectCode` varchar(255) NOT NULL,
+  `subjectCode` bigint(20) NOT NULL,
   `periodId` bigint(20) NOT NULL,
   `facultyId` bigint(20) NOT NULL,
   `teacher` varchar(255) NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE `enrolls` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `classId` bigint(20) NOT NULL,
   `studentId` bigint(20) NOT NULL,
-  `grade` int(11) NOT NULL,
+  `grade` int(11),
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 CREATE TABLE `faculties` (
@@ -107,4 +107,72 @@ VALUES (
   (NULL, '4', 'TÉCNICAS DE PROGRAMACIÓN III', '4'),
   (NULL, '4', 'CIRCUITOS Y SISTEMAS DIGITALES', '3'),
   (NULL, '4', 'LABORATORIO DE FÍSICA II', '2'),
-  (NULL, '4', 'ESTRUCTURA DE DATOS', '4')
+  (NULL, '4', 'ESTRUCTURA DE DATOS', '4');
+INSERT INTO `periods` (`id`, `name`)
+VALUES (NULL, '2022 - 01'),
+(NULL, '2022 - 02');
+INSERT INTO `faculties` (`id`, `name`)
+VALUES (NULL, 'Atlántico');
+INSERT INTO `classes` (
+    `id`,
+    `subjectCode`,
+    `periodId`,
+    `facultyId`,
+    `teacher`
+  )
+VALUES (NULL, '1', '1', '1', 'María González'),
+  (NULL, '2', '1', '1', 'Carla Herrera'),
+  (NULL, '3', '1', '1', 'Richard Gutierrez'),
+  (NULL, '4', '1', '1', 'Marlon Martínez'),
+  (NULL, '5', '1', '1', 'Walter blanco'),
+  (NULL, '6', '1', '1', 'Jesús Rosales'),
+  (NULL, '7', '1', '1', 'Pedro Hernández'),
+  (NULL, '8', '2', '1', 'Mario Fernandez'),
+  (NULL, '9', '2', '1', 'Rodrigo Caldera'),
+  (NULL, '10', '2', '1', 'Carlos Bustamante'),
+  (NULL, '11', '2', '1', 'Michael Rojas'),
+  (NULL, '12', '2', '1', 'Tony Marquez'),
+  (NULL, '13', '2', '1', 'Sheryl Bolivar');
+INSERT INTO `enrolls` (`id`, `classId`, `studentId`, `grade`)
+VALUES (NULL, '1', '1', '9'),
+  (NULL, '2', '1', '8'),
+  (NULL, '3', '1', '9'),
+  (NULL, '4', '1', '6'),
+  (NULL, '5', '1', '7'),
+  (NULL, '6', '1', '6'),
+  (NULL, '7', '1', '10'),
+  (NULL, '8', '1', NULL),
+  (NULL, '9', '1', NULL),
+  (NULL, '10', '1', NULL),
+  (NULL, '11', '1', NULL),
+  (NULL, '12', '1', NULL),
+  (NULL, '13', '1', NULL),
+  (NULL, '14', '1', NULL)
+INSERT INTO `assigments` (
+    `id`,
+    `classId`,
+    `name`,
+    `commitmentDate`,
+    `modality`
+  )
+VALUES (
+    NULL,
+    '1',
+    'LA COMUNICACIÓN',
+    '2023-03-02',
+    'EXAMEN'
+  );
+INSERT INTO `assigments` (
+    `id`,
+    `classId`,
+    `name`,
+    `commitmentDate`,
+    `modality`
+  )
+VALUES (
+    NULL,
+    '2',
+    'NORMAS DE LA UNIVERSIDAD',
+    '2023-02-25 22:31:49',
+    'EXAMEN'
+  );
